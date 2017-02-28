@@ -14,6 +14,7 @@
 		221E560D1E5FA594009774B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 221E560B1E5FA594009774B3 /* LaunchScreen.storyboard */; };
 		2282C62B1E5FAF5D0030377A /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2282C62A1E5FAF5D0030377A /* ChatViewController.swift */; };
 		2A01CD28260EFB70E78CEE1F /* Pods_ParseBot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6120EEEE453B3E98866EE2C /* Pods_ParseBot.framework */; };
+		43F668441E655AE2007A93E1 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F668431E655AE2007A93E1 /* ChatTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		221E560C1E5FA594009774B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		221E560E1E5FA594009774B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2282C62A1E5FAF5D0030377A /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		43F668431E655AE2007A93E1 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		AE98C7B5769FC09DA9A75483 /* Pods-ParseBot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseBot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParseBot/Pods-ParseBot.debug.xcconfig"; sourceTree = "<group>"; };
 		C6120EEEE453B3E98866EE2C /* Pods_ParseBot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParseBot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F82C6596B73106AE57A40C10 /* Pods-ParseBot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseBot.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParseBot/Pods-ParseBot.release.xcconfig"; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				221E56091E5FA594009774B3 /* Assets.xcassets */,
 				221E560B1E5FA594009774B3 /* LaunchScreen.storyboard */,
 				221E560E1E5FA594009774B3 /* Info.plist */,
+				43F668431E655AE2007A93E1 /* ChatTableViewCell.swift */,
 			);
 			path = ParseBot;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				221E56051E5FA593009774B3 /* LoginViewController.swift in Sources */,
+				43F668441E655AE2007A93E1 /* ChatTableViewCell.swift in Sources */,
 				2282C62B1E5FAF5D0030377A /* ChatViewController.swift in Sources */,
 				221E56031E5FA593009774B3 /* AppDelegate.swift in Sources */,
 			);
