@@ -25,16 +25,16 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func onLogin(_ sender: AnyObject) {
-        
-        PFUser.logInWithUsername(inBackground: loginField.text!, password: passwordField.text!) { (user: PFUser?, error: Error?) in
-            if user != nil {
-                self.performSegue(withIdentifier: "goToChat", sender: self)
-            } else {
-                print(error?.localizedDescription)
+        if ((loginField.text?.isEmpty)! || (passwordField.text?.isEmpty)!) {
+            PFUser.logInWithUsername(inBackground: loginField.text!, password: passwordField.text!) { (user: PFUser?, error: Error?) in
+                if user != nil {
+                    self.performSegue(withIdentifier: "chat", sender: self)
+                } else {
+                    print(error!.localizedDescription)
+                }
             }
         }
     }
-        
 
     @IBAction func onSignUp(_ sender: AnyObject) {
         let user = PFUser()
@@ -44,8 +44,8 @@ class LoginViewController: UIViewController {
         
         user.signUpInBackground {
             (succeeded: Bool, error: Error?) -> Void in
-            if let error =  error{
-                print(error.localizedDescription)
+            if let error = error{
+                print("error: \(error)")
             } else {
                 print("a user was created")
                 self.performSegue(withIdentifier: "chat", sender: self)
